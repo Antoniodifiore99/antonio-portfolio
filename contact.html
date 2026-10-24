@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Get in touch with Antonio Di Fiore about UX/UI design projects and collaborations.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact | Antonio Di Fiore">
+    <meta property="og:description"
+        content="Get in touch with Antonio Di Fiore about UX/UI design projects and collaborations.">
+    <meta property="og:image" content="assets/images/og-preview.svg">
+    <meta property="og:locale" content="en_US">
+
+    <title>Contact | Antonio Di Fiore</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- Portfolio CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+            <div class="container">
+
+                <a class="brand" href="index.html" aria-label="Antonio Di Fiore home">
+                    AD
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+
+                    <ul class="navbar-nav mx-auto gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="contact.html"
+                               aria-current="page">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-dark btn-small mt-3 mt-lg-0" href="cv.html">
+                        CV <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content">
+
+        <section class="container page-intro">
+            <p class="breadcrumb-custom">
+                <a href="index.html">Home</a> › Contact
+            </p>
+
+            <h1>Let’s get in touch.</h1>
+
+            <p>
+                Have a project in mind or want to get in touch?
+                Feel free to send me a message.
+            </p>
+        </section>
+
+        <section class="container contact-layout">
+
+            <div class="contact-copy">
+                <h2>Let’s talk about your idea.</h2>
+
+                <p>
+                    Whether it’s a collaboration, a design project
+                    or a simple question, I’d be happy to hear from you.
+                </p>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <form class="contact-form" action="#" method="post">
+
+                <!-- Honeypot antispam -->
+                <div class="hp-field" aria-hidden="true">
+                    <label for="website-check">Website</label>
+                    <input
+                        type="text"
+                        id="website-check"
+                        name="website_check"
+                        tabindex="-1"
+                        autocomplete="off">
+                </div>
+
+                <div class="form-field">
+                    <label for="first-name">Name *</label>
+                    <input
+                        id="first-name"
+                        name="first_name"
+                        autocomplete="given-name"
+                        placeholder="Your name"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="surname">Surname *</label>
+                    <input
+                        id="surname"
+                        name="surname"
+                        autocomplete="family-name"
+                        placeholder="Your surname"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="you@example.com"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="subject">Subject *</label>
+                    <input
+                        id="subject"
+                        name="subject"
+                        placeholder="What’s this about?"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message *</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Tell me about your project or idea…"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-lilac w-100">
+                    Send Message →
+                </button>
+
+                <p
+                    id="form-status"
+                    class="form-status"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer footer-large">
+
+        <div class="container footer-inner">
+
+            <nav aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="cv.html">CV</a>
+            </nav>
+
+            
+<!-- SOCIAL LINKS -->
+<div class="social-links">
+
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@jugaad.project"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="TikTok"
+       title="TikTok">
+        <i class="bi bi-tiktok" aria-hidden="true"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/jugaad.project_/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram"
+       title="Instagram">
+        <i class="bi bi-instagram" aria-hidden="true"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/antonio-di-fiore-87a73a230/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="LinkedIn"
+       title="LinkedIn">
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+    </a>
+
+    <!-- Behance -->
+    <a href="https://www.behance.net/antoniodifiore1"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Behance"
+       title="Behance">
+        <i class="bi bi-behance" aria-hidden="true"></i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Antoniodifiore99"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="GitHub"
+       title="GitHub">
+        <i class="bi bi-github" aria-hidden="true"></i>
+    </a>
+
+</div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Antonio Di Fiore. All rights reserved.
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init({
+            publicKey: "9h44lfvhpMu02GTKO"
+        });
+
+        const contactForm = document.querySelector(".contact-form");
+        const sendButton = contactForm.querySelector('button[type="submit"]');
+        const status = document.getElementById("form-status");
+        const honeypot = document.getElementById("website-check");
+
+        contactForm.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            if (!contactForm.reportValidity()) return;
+
+            // Honeypot antispam
+            if (honeypot.value.trim() !== "") {
+                contactForm.reset();
+                return;
+            }
+
+            // Reset feedback
+            status.textContent = "";
+            status.className = "form-status";
+
+            sendButton.disabled = true;
+            sendButton.textContent = "Sending...";
+
+            try {
+                await emailjs.sendForm(
+                    "service_ibsvosi",
+                    "template_xfiwdbc",
+                    contactForm
+                );
+
+                status.textContent =
+                    "Message sent successfully! I'll get back to you soon.";
+
+                status.className = "form-status success";
+
+                contactForm.reset();
+
+            } catch (error) {
+                console.error("EmailJS error:", error);
+
+                status.textContent =
+                    "Something went wrong. Please try again.";
+
+                status.className = "form-status error";
+
+            } finally {
+                sendButton.disabled = false;
+                sendButton.textContent = "Send Message →";
+            }
+        });
+    </script>
+
+</body>
+</html>
